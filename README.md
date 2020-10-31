@@ -7,7 +7,7 @@ A git repository for lolMiner release versions
 ### lolMiner 1.0
 
 - lolMiner got a restructure how to configure it and also features a 2nd, more simple config file format.
-  Use lolMiner -h to get a list of new supported parameters or visit the new [online manual](https://github.com/Lolliedieb/lolMiner-releases/wiki)
+  Use lolMiner -h to get a list of new supported parameters.
 - Added optimizes solvers for Beam Hash III for AMD & Nvidia cards. Use *--coin BEAM* to auto switch from BeamHash II to BeamHash III on fork (approx June 28th, requires 8G card) or select Beam Hash III solver manually with *--algo BEAM-III* (requires 6G card)
 - Added performance improved (+ >10%) GRIN-C29M solver for 8G GPUs
 - Added Cuckaroo-30 solver to mine Cortex Ai (*--coin CTXC* or *--algo C30CTX*) for all 8G and higher GPUs
@@ -71,8 +71,6 @@ In case the miner detects no action of a GPU for at least a minute it will call 
 - Fixed a bug causing too low pool hash on GRIN-AT31
 - Added experimental GRIN-AT31 support for AMD Navi (8G), ~~AMD Fiji (4G)~~ and AMD Hawaii (4G / 8G) GPUs
 
-Edit: support for Fiji was broken, A fix can be found here: 
-https://github.com/Lolliedieb/lolMiner-preview/releases/tag/0.9.1hotfix
 
 ### lolMiner 0.9
 - Significant performance improvement for GRIN-AT31 on 8G AMD cards (+22% on Polaris to 30% on Radeon VII)
